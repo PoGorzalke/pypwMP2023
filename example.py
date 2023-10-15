@@ -4,6 +4,5 @@ def swap_max(items: list) -> list:
     return items
 
 
-my_list = [1, 2, 3, 5, 4]
-print(swap_max(my_list))
-
+dict = {}
+print(dict[sadf])
