@@ -1,7 +1,10 @@
 phone_list={}
-
+commands = ["new_contact", "show_contacts"]
 while True:
-    command = input("Pick and option: new_contact , show_contacts ")
+    command = input(f"Pick and option: {commands} ")
+    while command not in commands:
+        print("Unknown command, try again")
+        command = input(f"Pick and option: {commands} ")
     if command == "new_contact":
         name = input("Wprowadz swoje imie i nazwisko: ")
         phone_number = input("Wprowadz numer telefonu: ")
