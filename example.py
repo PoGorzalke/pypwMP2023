@@ -1,12 +1,6 @@
 def swap_max(items: list) -> list:
-    max_pos = 0
-    for i in range(len(items)):
-        if items[i] >= items[max_pos]:
-            max_pos = i
-    tmp = items[0]
-    items[0] = items[max_pos]
-    items[max_pos] = tmp
-    #items[0], items[max_pos] = items[max_pos], items[0]
+    max_pos = items.index(max(items))
+    items[0], items[max_pos] = items[max_pos], items[0]
     return items
 
 
